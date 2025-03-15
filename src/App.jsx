@@ -12,7 +12,7 @@ function App() {
       try {
         const res = await fetch("https://coupon-claim-backend.onrender.com/claim-coupon", {
           method: "POST",
-          credentials: "include",
+          credentials: "true",
           body: JSON.stringify({ guestID })
         });
         const data = await res.json();
